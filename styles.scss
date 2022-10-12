@@ -15,7 +15,7 @@ body{
 .piano{
     display: flex;
     .key{
-        height: calc(var(--width*4));
+        height: calc(var(--width) *4);
         width: var(--width);
     }
     .white{
@@ -23,6 +23,8 @@ body{
        background-color: white;
        border: 1px solid #333;     
     }
+
+    
     .black{
         --width: 60px;
         background-color: black;
@@ -30,4 +32,13 @@ body{
         margin-right: calc(var(--width)/-2);
         z-index:2
     }
+    
+}
+
+.white.active{
+    background-color:rgb(171, 170, 170) !important;
+}
+
+.black.active{
+    background-color: #333;
 }
